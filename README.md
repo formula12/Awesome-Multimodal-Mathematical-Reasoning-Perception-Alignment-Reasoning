@@ -1,4 +1,4 @@
-# Awesome Multimodal Mathematical Reasoning:       👀Perception - 🔗Alignment - 🧠Reasoning 
+# Awesome Multimodal Mathematical Reasoning:<br>👀Perception - 🔗Alignment - 🧠Reasoning 
 
 # [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Paper](https://img.shields.io/badge/Paper-arXiv%202603.08291-b31b1b.svg)](https://arxiv.org/abs/2603.08291)
 
