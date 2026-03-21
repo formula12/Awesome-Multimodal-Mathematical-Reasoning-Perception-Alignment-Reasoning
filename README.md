@@ -97,7 +97,7 @@ Evaluate final correctness only. Representative benchmarks: **ChartQA**, **PlotQ
 Evaluate the faithfulness and validity of intermediate reasoning steps. Representative benchmarks: **MM-MATH**, **MPBench**, **ErrorRadar**, **We-Math**, **MathVerse**.
 
 #### ⚙️ Executable
-Evaluate reasoning through execution, proof checking, program verification, or formal validation. Representative benchmarks: **GeoQA+**, **Geometry3K**, **E-GPS**, **FormalGeo**, **WikiSQL**.
+Evaluate reasoning through execution, proof checking, program verification, or formal validation. Representative benchmarks: **GeoQA+**, **Geometry3K**, **FormalGeo**, **WikiSQL**.
 
 ---
 
@@ -267,12 +267,13 @@ We organize multimodal mathematical reasoning resources with the same schema use
 | Name                                                      | Year (Venue)            | Eval Level | PAR Stage              | Key Contributions                                            |
 | --------------------------------------------------------- | ----------------------- | ---------: | ---------------------- | ------------------------------------------------------------ |
 | [GEOS](https://aclanthology.org/D15-1171/)                | 2015 (EMNLP)            | Executable | Perception + Alignment | Early geometry problem solving benchmark with text–diagram mapping. |
+| [GEOS++](https://aclanthology.org/D17-1081/)                | 2017 (EMNLP)            | Executable | Alignment | SAT-style benchmark with logical grounding. |
 | [Geometry3K](https://aclanthology.org/2021.acl-long.528/) | 2021 (ACL)              | Executable | Perception + Alignment | 3,002 geometry problems with dense formal language annotations. |
 | [GeoQA](https://aclanthology.org/2021.findings-acl.46/)   | 2021 (ACL Findings)     | Executable | Alignment + Reasoning  | Geometry QA with executable programs and multi-step supervision. |
 | [GeoQA+](https://aclanthology.org/2022.coling-1.130/)     | 2022 (COLING)           | Executable | Alignment + Reasoning  | Extended and more challenging geometry QA benchmark.         |
 | [PGDP5K](https://arxiv.org/abs/2205.09947)                | 2022 (IJCAI)            |     Answer | Perception             | Diagram parsing benchmark with primitive-level labels.       |
-| [UniGeo](https://arxiv.org/abs/2212.02746)                | 2022 (EMNLP)            | Executable | Alignment + Reasoning  | Unified geometry benchmark covering both calculation and proof tasks. |
-| [PGPS9K](https://arxiv.org/abs/2302.11097)                | 2023 (IJCAI)            | Executable | Perception + Alignment | Fine-grained diagram annotations with interpretable program supervision. |
+| [UniGeo](https://arxiv.org/abs/2212.02746)                | 2022 (EMNLP)            | Process | Alignment + Reasoning  | Unified geometry benchmark covering both calculation and proof tasks. |
+| [PGPS9K](https://arxiv.org/abs/2302.11097)                | 2023 (IJCAI)            | Executable | All | Fine-grained diagram annotations with interpretable program supervision. |
 | [GeomVerse](https://arxiv.org/abs/2312.12241)             | 2024 (ICML Workshop)    |     Answer | Reasoning              | Synthetic geometry benchmark with controllable difficulty.   |
 | [FormalGeo7K](https://openreview.net/forum?id=8wDSfs1W3w) | 2024 (NeurIPS Workshop) | Executable | Alignment + Reasoning  | Formalized geometry benchmark with diagram, formal description, and solution. |
 | [GeoGPT4V](https://aclanthology.org/2024.emnlp-main.44/)  | 2024 (EMNLP)            |     Answer | Perception + Alignment | GPT-4/GPT-4V generated geometry text–figure dataset for aligned learning. |
@@ -291,11 +292,11 @@ We organize multimodal mathematical reasoning resources with the same schema use
 | [TAT-QA](https://arxiv.org/abs/2105.07624)                   | 2021 (ACL)           |     Answer | Alignment + Reasoning  | Table-text numerical reasoning benchmark in financial reports. |
 | [ChartQA](https://aclanthology.org/2022.findings-acl.177/)   | 2022 (ACL Findings)  |     Answer | Perception + Reasoning | Real-world chart QA with visual and logical reasoning.       |
 | [MultiHiertt](https://aclanthology.org/2022.acl-long.454/)   | 2022 (ACL)           |     Answer | Alignment + Reasoning  | Numerical reasoning over multi-hierarchical tables and text. |
-| [DUDE](https://arxiv.org/abs/2305.08455)                     | 2023 (ICCV)          |     Answer | Perception + Alignment | Multi-page document understanding with tables and figures.   |
+| [DUDE](https://arxiv.org/abs/2305.08455)                     | 2023 (ICCV)          |     Answer | All                    | Multi-page document understanding with tables and figures.   |
 | [DocMath-Eval](https://aclanthology.org/2024.acl-long.852/)  | 2024 (ACL)           |     Answer | Alignment + Reasoning  | Long-document math reasoning with evidence grounding.        |
 | [CharXiv](https://proceedings.neurips.cc/paper_files/paper/2024/hash/cdf6f8e9fd9aeaf79b6024caec24f15b-Abstract-Datasets_and_Benchmarks_Track.html) | 2024 (NeurIPS)       |     Answer | Perception             | Human-curated real arXiv charts for chart understanding.     |
 | [ChartQAPro](https://aclanthology.org/2025.findings-acl.978/) | 2025 (ACL Findings)  |     Answer | Perception + Alignment | More diverse and challenging chart QA, including dashboards. |
-| [ChartQA-X](https://arxiv.org/abs/2504.13275)                | 2026 (WACV)          |     Answer | Alignment              | Chart QA benchmark with natural-language explanations.       |
+| [ChartQA-X](https://arxiv.org/abs/2504.13275)                | 2026 (WACV)          |    Process | Perception + Alignment | Chart QA benchmark with natural-language explanations.       |
 | [ChartMuseum](https://arxiv.org/abs/2505.13444)              | 2025 (NeurIPS)       |     Answer | Perception + Reasoning | Expert-annotated real-world chart reasoning benchmark.       |
 | [WikiTableQuestions](https://arxiv.org/abs/1508.00305)       | 2015 (ACL)           | Executable | Alignment + Reasoning  | Table question answering benchmark over web tables.          |
 | [WikiSQL](https://arxiv.org/abs/1709.00103)                  | 2017 (Arxiv)         | Executable | Alignment + Reasoning  | Natural language to SQL benchmark with execution-based evaluation. |
@@ -311,20 +312,20 @@ We organize multimodal mathematical reasoning resources with the same schema use
 | [MathVista](https://arxiv.org/abs/2310.02255)                | 2024 (ICLR)          | Comprehensive | All                    | Aggregated benchmark spanning diagrams, charts, tables, and images. |
 | [MATH-V](https://arxiv.org/abs/2402.14804)                   | 2024 (NeurIPS)       | Comprehensive | All                    | More difficult competition-style visual math benchmark.      |
 | [Math2Visual](https://aclanthology.org/2025.findings-acl.586/) | 2025 (ACL Findings)  |        Answer | Perception + Alignment | Benchmark for generating pedagogically meaningful visuals from math word problems. |
-| [MV-MATH](https://cvpr.thecvf.com/virtual/2025/poster/33039) | 2025 (CVPR)          |        Answer | Perception + Alignment | Multi-image K-12 multimodal math reasoning with cross-image dependencies. |
+| [MV-MATH](https://cvpr.thecvf.com/virtual/2025/poster/33039) | 2025 (CVPR)          |        Answer | All                    | Multi-image K-12 multimodal math reasoning with cross-image dependencies. |
 
 ### Process-level and Error-focused Benchmarks
 
-| Name                                                         | Year (Venue)          | Eval Level | PAR Stage | Key Contributions                                            |
-| ------------------------------------------------------------ | --------------------- | ---------: | --------- | ------------------------------------------------------------ |
-| [MM-MATH](https://aclanthology.org/2024.findings-emnlp.73/)  | 2024 (EMNLP Findings) |    Process | Reasoning | Process annotations and fine-grained error labels for multimodal math. |
-| [CHAMP](https://aclanthology.org/2024.findings-acl.785/)     | 2024 (ACL Findings)   |    Process | Reasoning | Competition-style math benchmark with concepts, hints, and wrong-step analysis. |
-| [PolyMATH](https://arxiv.org/abs/2410.14702)                 | 2024 (arXiv)          |    Process | Reasoning | Image-text math puzzles with broad cognitive coverage.       |
-| [ErrorRadar](https://arxiv.org/abs/2410.04509)               | 2024 (ICLR Worshop)   |    Process | Reasoning | Fine-grained taxonomy for multimodal math process errors.    |
-| [We-Math](https://aclanthology.org/2025.acl-long.983/)       | 2025 (ACL)            |    Process | Reasoning | Principle-centered process evaluation benchmark.             |
-| [MPBench](https://aclanthology.org/2025.findings-acl.1112/)  | 2025 (ACL Findings)   |    Process | Reasoning | Benchmark for process error identification and PRM evaluation. |
-| [Sherlock](https://arxiv.org/abs/2505.22651)                 | 2025 (NeurIPS)        |    Process | Reasoning | Multimodal error detection, localization, and correction.    |
-| [MathVerse](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1270_ECCV_2024_paper.php) | 2024 (ECCV)           |    Process | All       | Diagram perturbation benchmark with chain-of-thought step scoring. |
+| Name                                                         | Year (Venue)          | Eval Level | PAR Stage              | Key Contributions                                            |
+| ------------------------------------------------------------ | --------------------- | ---------: | ---------------------- | ------------------------------------------------------------ |
+| [MM-MATH](https://aclanthology.org/2024.findings-emnlp.73/)  | 2024 (EMNLP Findings) |    Process | Reasoning              | Process annotations and fine-grained error labels for multimodal math. |
+| [CHAMP](https://aclanthology.org/2024.findings-acl.785/)     | 2024 (ACL Findings)   |    Process | Reasoning              | Competition-style math benchmark with concepts, hints, and wrong-step analysis. |
+| [PolyMATH](https://arxiv.org/abs/2410.14702)                 | 2024 (arXiv)          |     Answer | Perception + Reasoning | Image-text math puzzles with broad cognitive coverage.       |
+| [ErrorRadar](https://arxiv.org/abs/2410.04509)               | 2024 (ICLR Workshop)  |    Process | Reasoning              | Fine-grained taxonomy for multimodal math process errors.    |
+| [We-Math](https://aclanthology.org/2025.acl-long.983/)       | 2025 (ACL)            |    Process | Reasoning              | Principle-centered process evaluation benchmark.             |
+| [MPBench](https://aclanthology.org/2025.findings-acl.1112/)  | 2025 (ACL Findings)   |    Process | Reasoning              | Benchmark for process error identification and PRM evaluation. |
+| [Sherlock](https://arxiv.org/abs/2505.22651)                 | 2025 (NeurIPS)        |    Process | Reasoning              | Multimodal error detection, localization, and correction.    |
+| [MathVerse](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1270_ECCV_2024_paper.php) | 2024 (ECCV)           |    Process | All                    | Diagram perturbation benchmark with chain-of-thought step scoring. |
 
 ### Comprehensive MMR Benchmarks
 
