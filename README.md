@@ -355,11 +355,31 @@ We organize multimodal mathematical reasoning resources with the same schema use
 If you find this repository useful, please consider citing our survey:
 
 ```bibtex
-@article{yang2026deconstructing,
-  title={Deconstructing Multimodal Mathematical Reasoning: Towards a Unified Perception-Alignment-Reasoning Paradigm},
-  author={Yang, Tianyu and Wu, Sihong and Zhao, Yilun and Liang, Zhenwen and Dai, Lisen and Zhao, Chen and Cheng, Minhao and Cohan, Arman and Zhang, Xiangliang},
-  journal={arXiv preprint arXiv:2603.08291},
-  year={2026}
+@inproceedings{yang-etal-2026-survey-multimodal,
+    title = "A Survey of Multimodal Mathematical Reasoning: From Perception, Alignment to Reasoning",
+    author = "Yang, Tianyu  and
+      Wu, Sihong  and
+      Zhao, Yilun  and
+      Liang, Zhenwen  and
+      Dai, Lisen  and
+      Zhao, Chen  and
+      Cheng, Minhao  and
+      Cohan, Arman  and
+      Zhang, Xiangliang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.1961/",
+    doi = "10.18653/v1/2026.acl-long.1961",
+    pages = "42386--42408",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Multimodal Mathematical Reasoning (MMR) has recently attracted increasing attention for its capability to solve mathematical problems involving both textual and visual modalities. However, current models still face significant challenges in real-world visual math tasks, often misinterpreting diagrams, failing to align mathematical symbols with visual evidence, or producing inconsistent reasoning steps. Moreover, existing evaluations mainly focus on checking final answers rather than verifying the correctness or executability of each intermediate step. A growing body of recent research addresses these issues by integrating structured perception, explicit alignment, and verifiable reasoning within unified frameworks.To establish a clear roadmap for understanding and comparing different MMR approaches, we systematically review them around four fundamental questions: (1) What to extract from multimodal inputs, (2) How to represent and align textual and visual information, (3) How to perform the reasoning, and (4) How to evaluate the correctness of the overall reasoning process. Finally, we discuss open challenges and share our thoughts on future research directions."
 }
 ```
 
